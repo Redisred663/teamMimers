@@ -3,12 +3,12 @@ const generateTem = (team) => {
 
     const managGen = manager => {
         let managCard = `<div class="col-4 mt-4">
-        <div class="card h-100">
-            <div class="card-header">
+        <div class="card h-100" id="manageCard">
+            <div class="card-header" id="manageHead">
                 <h3>${manager.name}</h3>
                 <h4>Manager</h4><i class="fa-solid fa-mug-hot"></i>
             </div>
-            <div class="card-body">
+            <div class="card-body" id="manageBody">
                 <p class="id">ID: ${manager.id}</p>
                 <p class="email">Email: <a href="mailto:${manager.email}">${manager.email}</a></p>
                 <p class="office">Office Number: ${manager.offiNumber}</p>
@@ -20,12 +20,12 @@ const generateTem = (team) => {
 
     const engGen = engineer => {
         let engCard = `<div class="col-4 mt-4">
-        <div class="card h-100">
-            <div class="card-header">
+        <div class="card h-100" id="enginCard">
+            <div class="card-header" id="enginHead">
                 <h3>${engineer.name}</h3>
                 <h4>Engineer</h4><i class="fa-solid fa-glasses"></i>
             </div>
-            <div class="card-body">
+            <div class="card-body" id="enginBody">
                 <p class="id">ID: ${engineer.id}</p>
                 <p class="email">Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
                 <p class="github">Github: <a href="https://github.com/${engineer.gitty}">${engineer.gitty}</a></p>
@@ -37,12 +37,12 @@ const generateTem = (team) => {
 
     const inGen = intern => {
         let inCard = `<div class="col-4 mt-4">
-        <div class="card h-100">
-            <div class="card-header">
+        <div class="card h-100" id="intCard">
+            <div class="card-header" id="intHead">
                 <h3>${intern.name}</h3>
                 <h4>Intern</h4><i class="fa-solid fa-graduation-cap"></i>
             </div>
-            <div class="card-body">
+            <div class="card-body" id="intBody">
                 <p class="id">ID: ${intern.id}</p>
                 <p class="email">Email:<a href="mailto:${intern.email}">${intern.email}</a></p>
                 <p class="school">School: ${intern.school}</p>
@@ -80,8 +80,8 @@ module.exports = team => {
     <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 jumbotron mb-3 team-heading bg-danger">
-                <h1 class="text-center text-white">My Team</h1>
+            <div class="col-12 jumbotron mb-3 team-heading bg-danger" id="header">
+                <h1 class="text-center text-white">My Team of Mimers</h1>
             </div>
         </div>
     </div>
