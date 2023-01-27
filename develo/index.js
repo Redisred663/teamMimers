@@ -3,9 +3,8 @@ const fs = require('fs');
 const Manager = require('./manager');
 const Engineer = require('./engineer');
 const Intern = require('./intern');
-
+const generatePage = require('./generatePager');
 const path = require('path');
-const { default: InputPrompt } = require('inquirer/lib/prompts/input');
 const OUTPUT_DIR = path.resolve(__dirname, 'assets');
 const outputPath = path.join(OUTPUT_DIR, 'index.html');
 const teamMimers = [];
